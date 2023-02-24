@@ -1,12 +1,14 @@
-public abstract class Rectangle extends Shape{
+public class Rectangle extends Shape{
     int width;
     int height;
 
-
-    Rectangle rect = new Rectangle() {
-        @Override
-        public void getArea(){
-            int area = width * height;
-        }
-    };
+    public Rectangle(int width,  int height, String color) {
+        super(color);
+        this.width = width;
+        this.height = height;
+    }
+    @Override
+    public int getArea(){
+        return this.width * this.height;
+    }
 }

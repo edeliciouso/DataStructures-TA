@@ -1,6 +1,9 @@
-public class Shape {
+public abstract class Shape {
     String color;
-    public void getArea() {
-        Shape sh = new Shape();
+
+    abstract int getArea();
+
+    public Shape(String color){
+        this.color = color;
     }
 }
